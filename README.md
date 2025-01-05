@@ -4,6 +4,19 @@ Application to generate filtered search queries that you can copy and paste into
 # What is this?
 This is a generator for YouTubes hidden advanced search feature. Basically it makes searching for what you want much more easier by creating a search query that will match what you want when you copy and paste it into the search bar.
 
+# Installing
+Nothing else needs to be installed. All you need is a windows computer for any "exe" files or Java installed on your computer for "Jar" files.
+
+## Releases
+Available downloads for the application.
+
+#### Executables
+
+File|Description
+:---|:---
+[jar](https://github.com/InfernoCycle/Inferno_YouTube_Filtering/releases/download/1.1.0/Inferno.YouTube.Filtering.jar)|Download jar for any device that has Java installed. 
+[exe](https://github.com/InfernoCycle/Inferno_YouTube_Filtering/releases/download/1.1.0/Inferno.YouTube.Filtering.exe)|Download exe for Windows Device.
+
 # How to use
 All you have to do is type a keyword, phrase, or whatever, then choose how you want the result to come out (in the title, in the description, etc) and click the "Print" button to generate what you want.
 
@@ -71,3 +84,6 @@ Something similar can be done with the year. If the year is 2025 then you can ju
 
 > [!NOTE]  
 > Note that the date section is disabled by default and you have to manually enable it to use it.
+
+# Try out my YouTube Downloader Page as well
+https://github.com/InfernoCycle/YouTubeDownloader
