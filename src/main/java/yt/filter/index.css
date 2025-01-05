@@ -1,0 +1,40 @@
+.root{
+  -fx-background-color:rgba(0,0,0,0.6);
+}
+#title1{
+  -fx-font-size:25px;
+  -fx-font-weight:bolder;
+  -fx-text-fill:orange;
+  -fx-innershadow:gaussian yellow 10 1.0 5 5;
+}
+#rightTitle{
+  -fx-font-weight:bolder;
+  -fx-text-fill:orange;
+  -fx-font-size:15px;
+}
+#resBtn{
+  -fx-padding:5px;
+  -fx-width:200px;
+  -fx-text-fill:gray;
+  -fx-font-size:15px;
+  -fx-background-color:rgba(0,0,0,0.7);
+}
+#resBtn:hover{
+  -fx-cursor:hand;
+  -fx-background-color:rgba(93, 61, 105, 0.8);
+}
+.checks:hover{
+  -fx-cursor:hand;
+}
+#resultLabel{
+  -fx-font-size:15px;
+  -fx-font-weight:bolder;
+}
+.fRadios{
+  -fx-font-weight:bolder;
+}
+.fLabels{
+  -fx-font-weigth:bolder;
+  -fx-font-size:15px;
+  -fx-wrap-text:true;
+}
