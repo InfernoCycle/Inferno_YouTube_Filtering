@@ -14,8 +14,8 @@ Available downloads for the application.
 
 File|Description
 :---|:---
-[jar](https://github.com/InfernoCycle/Inferno_YouTube_Filtering/releases/download/1.1.0/Inferno.YouTube.Filtering.jar)|Download jar for any device that has Java installed. 
-[exe](https://github.com/InfernoCycle/Inferno_YouTube_Filtering/releases/download/1.1.0/Inferno.YouTube.Filtering.exe)|Download exe for Windows Device.
+[jar](https://github.com/InfernoCycle/Inferno_YouTube_Filtering/releases/download/1.2.0/Inferno.YouTube.Filtering.jar)|Download jar for any device that has Java installed. 
+[exe](https://github.com/InfernoCycle/Inferno_YouTube_Filtering/releases/download/1.2.0/Inferno.YouTube.Filtering.exe)|Download exe for Windows Device.
 
 # How to use
 All you have to do is type a keyword, phrase, or whatever, then choose how you want the result to come out (in the title, in the description, etc) and click the "Print" button to generate what you want.
