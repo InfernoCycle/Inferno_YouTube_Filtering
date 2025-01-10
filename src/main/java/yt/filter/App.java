@@ -51,7 +51,7 @@ public class App extends Application {
             pattern = Pattern.compile("(\\d{1,2}[-/]\\d{1,2}[-/]\\d{4}|\\d{1,2}[-/]\\d{1,2}[-/]\\d{2})");
         }else if(form.equals("YYYY{-/}MM{-/}DD")){
             marks[2] = true;
-            pattern = Pattern.compile("\\d{4}[-/]\\d{1,2}[-/]\\d{1,2}");
+            pattern = Pattern.compile("(\\d{4}[-/]\\d{1,2}[-/]\\d{1,2}|\\d{2}[-/]\\d{1,2}[-/]\\d{1,2})");
         }
         Matcher match = pattern.matcher(val);
 
@@ -69,13 +69,13 @@ public class App extends Application {
                 String [] strs = val.split("(-|/)");
                 format_date_str(strs);
                 if(marks[i] && i==0){
-                    newVal = strs[2]+"-"+strs[0]+"-"+strs[1];
+                    newVal = revertYear(strs[2])+"-"+strs[0]+"-"+strs[1];
                 }
                 else if(marks[i] && i==1){
-                    newVal = strs[2]+"-"+strs[1]+"-"+strs[0];
+                    newVal = revertYear(strs[2])+"-"+strs[1]+"-"+strs[0];
                 }
                 else if(marks[i] && i==2){
-                    newVal = strs[0]+"-"+strs[1]+"-"+strs[2];
+                    newVal = revertYear(strs[0])+"-"+strs[1]+"-"+strs[2];
                 }
             }
             return newVal;
@@ -97,6 +97,16 @@ public class App extends Application {
                 val[i] = "0"+val[i];
             }
         }
+    }
+
+    public String revertYear(String val){
+        if(val.length() == 1 && val.charAt(0) >= '5' && val.charAt(0) <= '9'){
+            return "200"+val;
+        }
+        if(val.length() == 2){
+            return "20" + val;
+        }
+        return val;
     }
 
     @Override
@@ -267,7 +277,7 @@ public class App extends Application {
                         if(i != temp.length-1){change+=pers;}
                     }
                     else if(tag.isSelected()){
-                        if(i<=temp.length-1){change=change+"tag:\""+temp[i].strip()+"\"";}
+                        if(i<=temp.length-1){change=change+"#\""+temp[i].strip()+"\"";}
                         if(i != temp.length-1){change+=pers;}
                     }
                     /*else if(specifierP.isSelected()){
